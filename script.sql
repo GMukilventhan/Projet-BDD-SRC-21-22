@@ -5,7 +5,6 @@
 ----==================================================================================  
 
 
-
 ---- Création table MEMBRE ----
 CREATE TABLE UTILISATEUR
 (
@@ -36,3 +35,12 @@ CREATE TABLE ABONNEMENT
     ABONNEMENT_date_adhesion DATE NOT NULL,
     ABONNEMENT_fin_adhesion DATE NOT NULL
 );
+
+---- Création table TYPE ABONNEMENT ----
+CREATE TABLE TYPE_ABONNEMENT
+(
+    TYPE_ABONNEMENT_id INT NOT NULL,
+    TYPE_ABONNEMENT_PRIX_PAR_MOIS DATE NOT NULL,
+    TYPE_ABONNEMENT_NOMBRE_EMPUNT NOT NULL
+);
+
