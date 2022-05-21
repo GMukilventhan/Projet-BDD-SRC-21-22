@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="3">
     <diagram id="XZ2FNBFQHorzxM068JaM" name="MCD (validé)">
-        <mxGraphModel dx="1614" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1031" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -428,7 +428,7 @@
                         <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="SOIeBWDmBt10avhGpR6U-102" value="ID_CASSETTE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#FF0000;" parent="SOIeBWDmBt10avhGpR6U-101" vertex="1">
+                <mxCell id="SOIeBWDmBt10avhGpR6U-102" value="ID_CASSETTE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=none;" parent="SOIeBWDmBt10avhGpR6U-101" vertex="1">
                     <mxGeometry y="26" width="160" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="SOIeBWDmBt10avhGpR6U-103" value="TITRE CASSETTE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="SOIeBWDmBt10avhGpR6U-101" vertex="1">
@@ -439,7 +439,7 @@
                         <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="SOIeBWDmBt10avhGpR6U-105" value="ID_DISQUE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#FF0000;" parent="SOIeBWDmBt10avhGpR6U-104" vertex="1">
+                <mxCell id="SOIeBWDmBt10avhGpR6U-105" value="ID_DISQUE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=none;" parent="SOIeBWDmBt10avhGpR6U-104" vertex="1">
                     <mxGeometry y="26" width="160" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="SOIeBWDmBt10avhGpR6U-106" value="TITRES_DISQUE" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="SOIeBWDmBt10avhGpR6U-104" vertex="1">
@@ -679,7 +679,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="MLD" id="XEGpWS7-ICGBTgjG0JCx">
-        <mxGraphModel dx="1614" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1031" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="eNKekl6-0VWOWv20ekdD-0"/>
                 <mxCell id="eNKekl6-0VWOWv20ekdD-1" parent="eNKekl6-0VWOWv20ekdD-0"/>
