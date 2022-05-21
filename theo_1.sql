@@ -328,7 +328,10 @@ CREATE TABLE `visioner` (
 -- Indexes for table `abonnement`
 --
 ALTER TABLE `abonnement`
-  ADD PRIMARY KEY (`ID_ABONNEMENT`);
+  ADD PRIMARY KEY (`ID_ABONNEMENT`),
+  ADD KEY `user_id_user_foreign` (`ID_Utilisateur`),
+  ADD KEY `type_abonnement_id_type_abonnement_foreign` (`ID_TYPE_ABONNEMENT`);
+
 
 --
 -- Indexes for table `artiste`
@@ -467,6 +470,7 @@ ALTER TABLE `retourner`
 --
 ALTER TABLE `type_abonnement`
   ADD PRIMARY KEY (`ID_TYPE_ABONNEMENT`);
+  
 
 --
 -- Indexes for table `utilisateur`
