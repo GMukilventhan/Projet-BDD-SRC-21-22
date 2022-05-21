@@ -391,7 +391,8 @@ ALTER TABLE `ecouter`
 -- Indexes for table `emprunt`
 --
 ALTER TABLE `emprunt`
-  ADD PRIMARY KEY (`ID_EMPRUNT`);
+  ADD PRIMARY KEY (`ID_EMPRUNT`),
+  ADD KEY `abo_id_abo_foreign` (`ID_ABONNEMENT`);
 
 --
 -- Indexes for table `emprunter`
