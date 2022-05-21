@@ -434,7 +434,8 @@ ALTER TABLE `music`
 -- Indexes for table `objet`
 --
 ALTER TABLE `objet`
-  ADD PRIMARY KEY (`ID_OBJET`);
+  ADD PRIMARY KEY (`ID_OBJET`),
+    ADD KEY `penalite_id_penalite_foreign` (`ID_PENALITE`);
 
 --
 -- Indexes for table `penalite`
