@@ -5,13 +5,15 @@
 ----==================================================================================  
 
 
----- Création table MEMBRE ----
+---- Création table UTILISATEUR ----
 CREATE TABLE UTILISATEUR
 (
     UTILISATEUR_ID INT NOT NULL,
     UTILISATEUR_nom VARCHAR(50) NOT NULL,
     UTILISATEUR_prenom VARCHAR(50) NOT NULL,
-    UTILISATEUR__mail TEXT NOT NULL
+    UTILISATEUR_mail TEXT NOT NULL,
+    UTILISATEUR_commune INT NOT NULL,
+    UTILISATEUR_CATEGORIE_SOCIAL INT NOT NULL
 );
 
 ---- Création table COMMUNE ----
