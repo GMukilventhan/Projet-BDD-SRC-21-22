@@ -39,7 +39,8 @@ INSERT INTO abonnement (DEBUT_ADHESION, FIN_ADHESION, ID_UTILISATEUR, ID_TYPE_AB
 VALUES 
     ('2022-03-05','2022-03-05',1,1),
     ('2022-03-05','2022-03-05',2,2);
-
+    ('2022-03-05','2022-03-05',3,1),
+    ('2022-03-05','2022-03-05',4,2);
 --Artiste--
 INSERT INTO artiste (NOM, PRENOM) 
 VALUES 
@@ -196,7 +197,21 @@ VALUES
     ('4','8'),
     ('5','9'),
     ('6','7');
-
+--produire--
+INSERT INTO `produire`(`ID_MUSIQUE`, `ID_ARTISTE`)
+VALUES 
+    ('1','6'),
+    ('2','7'),
+    ('3','6'),
+    ('4','7'),
+    ('5','6'),
+    ('6','7'),
+    ('7','7'),
+    ('8','6'),
+    ('9','9'),
+    ('10','9'),
+    ('11','8'),
+    ('12','8');
 --objet--
 INSERT INTO objet (NOMBRE_ARTICLE, PRIX_OBJET, ID_PENALITE, ID_CASSETTE, ID_DISQUE) 
 VALUES 
@@ -224,12 +239,12 @@ VALUES
 --emprunter--
 INSERT INTO `emprunter`(`ID_EMPRUNT`, `ID_OBJET`)
 VALUES 
-    ('[value-1]','[value-2]')
+    ('1','5')
+    ('2','6')
+    ('3','8')
+    ('4','2')
+    ('4','7')
 
---produire--
-INSERT INTO `produire`(`ID_MUSIQUE`, `ID_ARTISTE`)
-VALUES 
-    ('[value-1]','[value-2]')
 --rendre--
 INSERT INTO `rendre`(`ID_RETOUR`, `ID_OBJET`)
 VALUES
