@@ -298,7 +298,7 @@ ALTER TABLE `objet`
 	ADD CONSTRAINT `penalite_id_penalite_foreign` FOREIGN KEY (`ID_PENALITE`) REFERENCES `penalite` (`ID_PENALITE`);
 
 ALTER TABLE `abonnement`
-	ADD CONSTRAINT `user_id_user_foreign` FOREIGN KEY (`ID_Utilisateur`) REFERENCES `utilisateur` (`ID_Utilisateur`);
+	ADD CONSTRAINT `user_id_user_foreign` FOREIGN KEY (`ID_Utilisateur`) REFERENCES `utilisateur` (`ID_Utilisateur`),
 	ADD CONSTRAINT `type_abonnement_id_type_abonnement_foreign` FOREIGN KEY (`ID_TYPE_ABONNEMENT`) REFERENCES `type_abonnement` (`ID_TYPE_ABONNEMENT`);
 
 
