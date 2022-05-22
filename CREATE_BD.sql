@@ -47,7 +47,7 @@ CREATE TABLE `concevoir` (
 	`ID_ARTISTE` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `disques` (
+CREATE TABLE `disque` (
 	`ID_DISQUE` int(11) NOT NULL,
 	`TITRES_DISQUE` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -98,8 +98,8 @@ CREATE TABLE `objet` (
 	`NOMBRE_ARTICLE` int(11) NOT NULL,
 	`PRIX_OBJET` float NOT NULL,
 	`ID_PENALITE` int(11) NOT NULL,
-	'ID_CASSETTE' int(11) NULL,
-	'ID_DISQUE' int(11) NULL
+	`ID_CASSETTE` int(11) NULL,
+	`ID_DISQUE` int(11) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `penalite` (
@@ -178,7 +178,7 @@ ALTER TABLE `composer`
 ALTER TABLE `concevoir`
 	ADD PRIMARY KEY (`ID_FILM`,`ID_ARTISTE`);
 
-ALTER TABLE `disques`
+ALTER TABLE `disque`
 	ADD PRIMARY KEY (`ID_DISQUE`);
 
 ALTER TABLE `ecouter`
@@ -257,7 +257,7 @@ ALTER TABLE `categorie_social`
 ALTER TABLE `commune`
 	MODIFY `ID_COMMUNE` int(11) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `disques`
+ALTER TABLE `disque`
 	MODIFY `ID_DISQUE` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `emprunt`
@@ -299,8 +299,8 @@ ALTER TABLE `emprunt`
 	ADD CONSTRAINT `abo_id_abo_foreign` FOREIGN KEY (`ID_ABONNEMENT`) REFERENCES `abonnement` (`ID_ABONNEMENT`);
 
 ALTER TABLE `objet`
-	ADD CONSTRAINT `penalite_id_penalite_foreign` FOREIGN KEY (`ID_PENALITE`) REFERENCES `penalite` (`ID_PENALITE`);
-	ADD CONSTRAINT `disque_id_disque_foreign` FOREIGN KEY (`ID_DISQUE`) REFERENCES `disque` (`ID_DISQUE`);
+	ADD CONSTRAINT `penalite_id_penalite_foreign` FOREIGN KEY (`ID_PENALITE`) REFERENCES `penalite` (`ID_PENALITE`),
+	ADD CONSTRAINT `disque_id_disque_foreign` FOREIGN KEY (`ID_DISQUE`) REFERENCES `disque` (`ID_DISQUE`),
 	ADD CONSTRAINT `cassette_id_cassette_foreign` FOREIGN KEY (`ID_CASSETTE`) REFERENCES `cassette` (`ID_CASSETTE`);
 
 ALTER TABLE `abonnement`
