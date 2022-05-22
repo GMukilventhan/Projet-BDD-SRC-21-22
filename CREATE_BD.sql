@@ -17,7 +17,7 @@ CREATE TABLE `artiste` (
 	`PRENOM` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `casette` (
+CREATE TABLE `cassette` (
 	`ID_CASSETTE` int(11) NOT NULL,
 	`TITRE_CASSETTE` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -160,7 +160,7 @@ ALTER TABLE `abonnement`
 ALTER TABLE `artiste`
 	ADD PRIMARY KEY (`ID_ARTISTE`);
 
-ALTER TABLE `casette`
+ALTER TABLE `cassette`
 	ADD PRIMARY KEY (`ID_CASSETTE`);
 
 ALTER TABLE `categorie_social`
@@ -248,7 +248,7 @@ ALTER TABLE `abonnement`
 ALTER TABLE `artiste`
 	MODIFY `ID_ARTISTE` int(11) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `casette`
+ALTER TABLE `cassette`
 	MODIFY `ID_CASSETTE` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `categorie_social`
@@ -302,7 +302,7 @@ ALTER TABLE `objet`
 	ADD CONSTRAINT `penalite_id_penalite_foreign` FOREIGN KEY (`ID_PENALITE`) REFERENCES `penalite` (`ID_PENALITE`),
 	ADD CONSTRAINT `disque_id_disque_foreign` FOREIGN KEY (`ID_DISQUE`) REFERENCES `disque` (`ID_DISQUE`),
 	ADD CONSTRAINT `cassette_id_cassette_foreign` FOREIGN KEY (`ID_CASSETTE`) REFERENCES `cassette` (`ID_CASSETTE`);
-
+	
 ALTER TABLE `abonnement`
 	ADD CONSTRAINT `user_id_user_foreign` FOREIGN KEY (`ID_Utilisateur`) REFERENCES `utilisateur` (`ID_Utilisateur`),
 	ADD CONSTRAINT `type_abonnement_id_type_abonnement_foreign` FOREIGN KEY (`ID_TYPE_ABONNEMENT`) REFERENCES `type_abonnement` (`ID_TYPE_ABONNEMENT`);
