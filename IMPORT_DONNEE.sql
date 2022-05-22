@@ -198,12 +198,49 @@ VALUES
     ('6','7');
 
 --objet--
-INSERT INTO objet (NOMBRE_ARTICLE, PRIX_OBJET, ID_PENALITE) 
+INSERT INTO objet (NOMBRE_ARTICLE, PRIX_OBJET, ID_PENALITE, ID_CASSETTE, ID_DISQUE) 
 VALUES 
-    ([value-2],[value-3],[value-4])
+    (5,5.5,1,1,NULL)
+    (4,6.5,2,NULL,1)
+    (5,5.5,1,2,NULL)
+    (4,6.5,2,NULL,2)
+    (5,5.5,1,3,NULL)
+    (4,6.5,2,NULL,3)
+    (5,5.5,1,4,NULL)    
+    (4,6.5,2,NULL,4)
+    (5,5.5,1,5,NULL)    
+    (4,6.5,2,NULL,5)
+    (5,5.5,1,6,NULL)
+
+--retour--    
+INSERT INTO retour(RETOUR_DATE_RENDU) 
+VALUES 
+    ('2022-05-18')
+    ('2022-05-19')
+    ('2022-05-20')
+    ('2022-05-21')
+    ('2022-05-22')
+
 --emprunter--
+INSERT INTO `emprunter`(`ID_EMPRUNT`, `ID_OBJET`)
+VALUES 
+    ('[value-1]','[value-2]')
+
 --produire--
+INSERT INTO `produire`(`ID_MUSIQUE`, `ID_ARTISTE`)
+VALUES 
+    ('[value-1]','[value-2]')
 --rendre--
---retour--
+INSERT INTO `rendre`(`ID_RETOUR`, `ID_OBJET`)
+VALUES
+    ('[value-1]','[value-2]')
+
 --retourner--
+INSERT INTO `retourner`(`ID_RETOUR`, `ID_EMPRUNT`)
+VALUES
+    ('[value-1]','[value-2]')
+
 --visioner--
+INSERT INTO `visioner`(`ID_CASSETTE`, `ID_FILM`)
+VALUES
+    ('[value-1]','[value-2]')
