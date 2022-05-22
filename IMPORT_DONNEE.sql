@@ -19,3 +19,11 @@ VALUES
     (8,'sans activité');
 
 
+--Utilisateur--
+INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL) 
+ VALUES
+ ('GEORGE', 'Mukilventhan', 'mgeorge@george.fr', 1, 1),
+ ('PAYEN', 'Théo', 'tpayen@tpayen.fr', 2, 3),
+ ('WAZANE', 'Mohamed', 'mwazane@mwazane.fr', 3, 2),
+ ('HABERMANN', 'Maxime', 'mhabermann@mhabermann.fr', 3, 4);
+
