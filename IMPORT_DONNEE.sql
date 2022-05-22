@@ -27,3 +27,10 @@ INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL)
  ('WAZANE', 'Mohamed', 'mwazane@mwazane.fr', 3, 2),
  ('HABERMANN', 'Maxime', 'mhabermann@mhabermann.fr', 3, 4);
 
+--type_abonnement--
+INSERT INTO type_abonnement(ID_TYPE_ABONNEMENT, PRIX_PAR_MOIS, NOMBRE_EMPUNT)
+ VALUES 
+    (1,5.99,10),
+    (2,10.99,20);
+
+
