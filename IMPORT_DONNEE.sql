@@ -1,22 +1,22 @@
 --Commune--
-INSERT INTO commune(ID_COMMUNE, VILLE) 
+INSERT INTO commune(VILLE) 
 VALUES 
-    (1,'SAINT-DENIS'),
-    (2,'MONTREUIL'),
-    (3,'AULNAY-SOUS-BOIS'),
-    (4,'SEVRAN');
+    ('SAINT-DENIS'),
+    ('MONTREUIL'),
+    ('AULNAY-SOUS-BOIS'),
+    ('SEVRAN');
 
 --Catégorie_social--
-INSERT INTO categorie_social(ID_CATEGORIE_SOCIAL, CATEGORIE_SOCIAL) 
+INSERT INTO categorie_social(CATEGORIE_SOCIAL) 
 VALUES 
-    (1,'Scolaire'),
-    (2,'employé'),
-    (3,'cadre'),
-    (4,'artisant'),
-    (5,'commerçant'),
-    (6,'profession libérale'),
-    (7,'retrainté'),
-    (8,'sans activité');
+    ('Scolaire'),
+    ('employé'),
+    ('cadre'),
+    ('artisant'),
+    ('commerçant'),
+    ('profession libérale'),
+    ('retrainté'),
+    ('sans activité');
 
 
 --Utilisateur--
@@ -28,9 +28,9 @@ INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL)
  ('HABERMANN', 'Maxime', 'mhabermann@mhabermann.fr', 3, 4);
 
 --type_abonnement--
-INSERT INTO type_abonnement(ID_TYPE_ABONNEMENT, PRIX_PAR_MOIS, NOMBRE_EMPUNT)
+INSERT INTO type_abonnement(PRIX_PAR_MOIS, NOMBRE_EMPUNT)
  VALUES 
-    (1,5.99,10),
-    (2,10.99,20);
+    (5.99,10),
+    (10.99,20);
 
 
