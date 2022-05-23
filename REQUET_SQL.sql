@@ -15,5 +15,5 @@ select substr(mail,INSTR(mail,'@')+1) from utilisateur;
 select count (ID_DISQUE) from DISQUE;
 
 
-select ID_UTILISATEUR,NOM,PRENOM,ID_EMPRUNT,DATE_EMPRUNT from emprunt inner join abonnement on emprunt.ID_ABONNEMENT = abonnement.ID_ABONNEMENT inner join utilisateur on abonnement.ID_UTILISATEUR = utilisateur.ID_UTILISATEUR;
+select utilisateur.ID_UTILISATEUR,NOM,PRENOM,ID_EMPRUNT,DATE_EMPRUNT from emprunt inner join abonnement on emprunt.ID_ABONNEMENT = abonnement.ID_ABONNEMENT inner join utilisateur on abonnement.ID_UTILISATEUR = utilisateur.ID_UTILISATEUR;
 
