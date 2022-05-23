@@ -171,7 +171,7 @@ VALUES
     ('6','7');
 
 
-INSERT INTO INTERPRETER (ID_MUSIQUE, ID_ARTISTE)
+INSERT INTO interpreter (ID_MUSIQUE, ID_ARTISTE)
 VALUES
     ('1','6'),
     ('2','7'),
@@ -195,7 +195,7 @@ VALUES
     ('5','9'),
     ('6','7');
 
-INSERT INTO `produire`(`ID_MUSIQUE`, `ID_ARTISTE`)
+INSERT INTO produire (`ID_MUSIQUE`, `ID_ARTISTE`)
 VALUES 
     ('1','6'),
     ('2','7'),
@@ -227,7 +227,7 @@ VALUES
     ('2022-05-22');
 
 
-INSERT INTO `emprunter`(`ID_EMPRUNT`, `ID_OBJET`)
+INSERT INTO emprunter(`ID_EMPRUNT`, `ID_OBJET`)
 VALUES 
     ('1','5'),
     ('2','6'),
@@ -236,7 +236,7 @@ VALUES
     ('4','7');
 
 
-INSERT INTO `rendre`(`ID_RETOUR`, `ID_OBJET`)
+INSERT INTO rendre(`ID_RETOUR`, `ID_OBJET`)
 VALUES
     ('1','56'),
     ('2','57'),
@@ -245,13 +245,13 @@ VALUES
     ('5','69');
 
 
-INSERT INTO `retourner`(`ID_RETOUR`, `ID_EMPRUNT`)
+INSERT INTO retourner(`ID_RETOUR`, `ID_EMPRUNT`)
 VALUES
     ('1','1'),
     ('2','2');
 
 
-INSERT INTO `visioner`(`ID_CASSETTE`, `ID_FILM`)
+INSERT INTO visioner(`ID_CASSETTE`, `ID_FILM`)
 VALUES
     ('1','1'),
     ('2','2'),
