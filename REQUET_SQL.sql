@@ -9,3 +9,5 @@ select substr(mail,INSTR(mail,'@')+1) from utilisateur;
 
  --Selection 2 tables commune et mail 
 select Id_commune, mail from  utilisateur;
+
+select count (ID_DISQUE) from DISQUE;
