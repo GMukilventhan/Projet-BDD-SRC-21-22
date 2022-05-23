@@ -12,7 +12,7 @@ select nom, prenom from utilisateur where length(nom) = (SELECT MAX(length(nom))
 select substr(mail,INSTR(mail,'@')+1) from utilisateur;
 
 
-select count (ID_DISQUE) from DISQUE;
+select count(ID_DISQUE) from DISQUE;
 
 
 select utilisateur.ID_UTILISATEUR,NOM,PRENOM,ID_EMPRUNT,DATE_EMPRUNT from emprunt inner join abonnement on emprunt.ID_ABONNEMENT = abonnement.ID_ABONNEMENT inner join utilisateur on abonnement.ID_UTILISATEUR = utilisateur.ID_UTILISATEUR;
