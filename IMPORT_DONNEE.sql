@@ -118,7 +118,11 @@ VALUES
     ('LES SEGPA'),
     ('J ADORE CE QUE VOUS FAITES'),
     ('LES FOLIES FERMIÈRES'),
-    ('ON SOURIT POUR LA PHOTO');
+    ('ON SOURIT POUR LA PHOTO'),
+    ('Avengers: l eres d Ultron'),
+    ('Avengers:  Infinity War'),
+    ('Avengers: Endgame');
+
 
 
 INSERT INTO genre (GENRE) 
@@ -142,7 +146,10 @@ VALUES
     ('3','2'),
     ('4','2'),
     ('5','1'),
-    ('6','2');
+    ('6','2'),
+    ('7','1'),
+    ('8','1'),
+    ('9','1');
 
 
 INSERT INTO composer (ID_MUSIQUE, ID_ARTISTE)
@@ -195,7 +202,7 @@ VALUES
     ('5','9'),
     ('6','7');
 
-INSERT INTO produire (`ID_MUSIQUE`, `ID_ARTISTE`)
+INSERT INTO produire (ID_MUSIQUE, ID_ARTISTE)
 VALUES 
     ('1','6'),
     ('2','7'),
@@ -227,7 +234,7 @@ VALUES
     ('2022-05-22');
 
 
-INSERT INTO emprunter(`ID_EMPRUNT`, `ID_OBJET`)
+INSERT INTO emprunter(ID_EMPRUNT, ID_OBJET)
 VALUES 
     ('1','5'),
     ('2','6'),
@@ -236,7 +243,7 @@ VALUES
     ('4','7');
 
 
-INSERT INTO rendre(`ID_RETOUR`, `ID_OBJET`)
+INSERT INTO rendre(ID_RETOUR, ID_OBJET)
 VALUES
     ('1','56'),
     ('2','57'),
@@ -245,16 +252,20 @@ VALUES
     ('5','69');
 
 
-INSERT INTO retourner(`ID_RETOUR`, `ID_EMPRUNT`)
+INSERT INTO retourner(ID_RETOUR, ID_EMPRUNT)
 VALUES
     ('1','1'),
     ('2','2');
 
 
-INSERT INTO visioner(`ID_CASSETTE`, `ID_FILM`)
+INSERT INTO visioner(ID_CASSETTE, ID_FILM)
 VALUES
     ('1','1'),
     ('2','2'),
     ('3','3'),
     ('4','4'),
-    ('5','5');
+    ('5','5'),
+    ('3','6'),
+    ('1','7'),
+    ('1','8'),
+    ('1','9');
