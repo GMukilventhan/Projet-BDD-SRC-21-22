@@ -10,4 +10,25 @@ select substr(mail,INSTR(mail,'@')+1) from utilisateur;
  --Selection 2 tables commune et mail 
 select Id_commune, mail from  utilisateur;
 
-select count (ID_DISQUE) from DISQUE;
+select count(ID_DISQUE) from DISQUE;
+
+SELECT CURRENT_DATE() > FIN_ADHESION, ID_UTILISATEUR FROM abonnement;
+
+SELECT NOM, TITRE FROM ARTISTE, music;
+
+1. Récupéré les articles loué par un utilisateur
+
+SELECT   prenom, nom, DATE_EMPRUNT, ID_DISQUE, ID_CASSETTE FROM utilisateur INNER JOIN emprunt, ID_OBJET ON ID_UTILISATEUR = emprunt.ID_EMPRUNT=objet.ID_OBJET;
+
+SELECT  DISTINCT prenom, nom, DATE_EMPRUNT, TITRE_CASSETTE from utilisateur  inner join emprunt on ID_UTILISATEUR = emprunt.ID_EMPRUNT  inner join  cassette on ID_CASSETTE = cassette.ID_CASSETTE;
+
+
+
+
+2. Afficher les filme dans un disque
+
+3. Afficher la liste le prix de la pénalité d'un objet
+select * from penalite inner join objet on penalite.id_penalite = objet.id_penalite;
+
+
+select nom, prenom,  from emprunt inner join abonnement on emprunt.ID_ABONNEMENT = abonnement.ID_ABONNEMENT inner join utilisateur on abonnement.ID_UTILISATEUR = utilisateur.ID_UTILISATEUR;
