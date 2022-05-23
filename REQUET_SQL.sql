@@ -6,4 +6,6 @@ select nom,prenom from utilisateur where  length(nom)>=5;
 select nom, prenom from utilisateur where length(nom) = (SELECT MAX(length(nom)) from utilisateur);
 --Ecrire une requete permettant de recuperer le nom de domaine de chacune des adresses email presentes dans la table
 select substr(mail,INSTR(mail,'@')+1) from utilisateur;
- 
+
+ --Selection 2 tables commune et mail 
+select Id_commune, mail from  utilisateur;
