@@ -1,4 +1,4 @@
---Commune--
+
 INSERT INTO commune (VILLE) 
 VALUES 
     ('SAINT-DENIS'),
@@ -6,7 +6,7 @@ VALUES
     ('AULNAY-SOUS-BOIS'),
     ('SEVRAN');
 
---Catégorie_social--
+
 INSERT INTO categorie_social (CATEGORIE_SOCIAL) 
 VALUES 
     ('Scolaire'),
@@ -19,7 +19,7 @@ VALUES
     ('sans activité');
 
 
---Utilisateur--
+
 INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL) 
  VALUES
  ('GEORGE', 'Mukilventhan', 'mgeorge@george.fr', 1, 1),
@@ -27,21 +27,21 @@ INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL)
  ('WAZANE', 'Mohamed', 'mwazane@mwazane.fr', 3, 2),
  ('HABERMANN', 'Maxime', 'mhabermann@mhabermann.fr', 3, 4);
 
---type_abonnement--
+
 INSERT INTO type_abonnement (PRIX_PAR_MOIS, NOMBRE_EMPUNT)
  VALUES 
     (5.99,10),
     (10.99,20);
 
 
---Abo--
 INSERT INTO abonnement (DEBUT_ADHESION, FIN_ADHESION, ID_UTILISATEUR, ID_TYPE_ABONNEMENT) 
 VALUES 
     ('2022-03-05','2022-03-05',1,1),
-    ('2022-03-05','2022-03-05',2,2);
-    ('2022-03-05','2022-03-05',3,1),
-    ('2022-03-05','2022-03-05',4,2);
---Artiste--
+    ('2022-04-05','2022-04-05',2,2),
+    ('2022-03-05','2022-03-05',1,1),
+    ('2022-06-05','2022-06-05',4,2);
+
+
 INSERT INTO artiste (NOM, PRENOM) 
 VALUES 
     ('Andrieu','Tarik'),
@@ -54,7 +54,7 @@ VALUES
     ('Philippe','Guillard '),
     ('Agnès','Hurstel');
 
---Cassette--
+
 INSERT INTO cassette (TITRE_CASSETTE) 
 VALUES 
     ('Avengers'),
@@ -63,7 +63,7 @@ VALUES
     ('Sonic'),
     ('Pokemon');
 
---disques
+
 INSERT INTO disque (TITRES_DISQUE) 
 VALUES 
     ('Deux Frére'),
@@ -73,7 +73,7 @@ VALUES
     ('Ensemble'),
     ('QALF infinity');
 
---Music--
+
 INSERT INTO music (TITRE) 
 VALUES 
     ('AU DD'),
@@ -89,7 +89,7 @@ VALUES
     ('LIFE LIFE'),
     ('POUR L ARGENT');
 
---ecouter--
+
 INSERT INTO ecouter (ID_DISQUE, ID_MUSIQUE) 
 VALUES
     ('1','1'),
@@ -105,13 +105,12 @@ VALUES
     ('6','11'),
     ('6','12');
 
---emprunt--
 INSERT INTO  emprunt (DATE_EMPRUNT, ID_ABONNEMENT) 
 VALUES 
     ('2022-04-05',1),
     ('2022-05-05',2);
 
---film--
+
 INSERT INTO film (TITRE)
 VALUES 
     ('TOP GUN'),
@@ -121,7 +120,7 @@ VALUES
     ('LES FOLIES FERMIÈRES'),
     ('ON SOURIT POUR LA PHOTO');
 
---GENRE--
+
 INSERT INTO genre (GENRE) 
 VALUES
     ('AVENTURE'),
@@ -129,13 +128,13 @@ VALUES
     ('POLICIER'),
     ('SCIENCE FICTION');
 
---penalite--
+
 INSERT INTO penalite (TYPE_OBJET, PRIX_J_PENALITER) 
 VALUES
     ('CASSETTE',3.99),
     ('DISQUE',5.99);
 
---categoriser--
+
 INSERT INTO categoriser (ID_FILM, ID_GENRE) 
 VALUES 
     ('1','3'),
@@ -145,7 +144,7 @@ VALUES
     ('5','1'),
     ('6','2');
 
---composer--
+
 INSERT INTO composer (ID_MUSIQUE, ID_ARTISTE)
 VALUES
     ('1','1'),
@@ -161,7 +160,7 @@ VALUES
     ('11','3'),
     ('12','3');
 
---concevoir--
+
 INSERT INTO concevoir (ID_FILM, ID_ARTISTE)
 VALUES
     ('1','5'),
@@ -172,7 +171,6 @@ VALUES
     ('6','7');
 
 
---interpreter--
 INSERT INTO INTERPRETER (ID_MUSIQUE, ID_ARTISTE)
 VALUES
     ('1','6'),
@@ -188,7 +186,6 @@ VALUES
     ('11','8'),
     ('12','8');
 
---jouer--
 INSERT INTO jouer (ID_FILM, ID_ARTISTE)
 VALUES
     ('1','5'),
@@ -197,7 +194,7 @@ VALUES
     ('4','8'),
     ('5','9'),
     ('6','7');
---produire--
+
 INSERT INTO `produire`(`ID_MUSIQUE`, `ID_ARTISTE`)
 VALUES 
     ('1','6'),
@@ -212,22 +209,15 @@ VALUES
     ('10','9'),
     ('11','8'),
     ('12','8');
---objet--
+
 INSERT INTO objet (NOMBRE_ARTICLE, PRIX_OBJET, ID_PENALITE, ID_CASSETTE, ID_DISQUE) 
 VALUES 
     (5,5.5,1,1,NULL),
     (4,6.5,2,NULL,1),
     (5,5.5,1,2,NULL),
-    (4,6.5,2,NULL,2),
-    (5,5.5,1,3,NULL),
-    (4,6.5,2,NULL,3),
-    (5,5.5,1,4,NULL),    
-    (4,6.5,2,NULL,4),
-    (5,5.5,1,5,NULL),    
-    (4,6.5,2,NULL,5),
-    (5,5.5,1,6,NULL);
+    (4,6.5,2,NULL,2);
 
---retour--    
+
 INSERT INTO retour(RETOUR_DATE_RENDU) 
 VALUES 
     ('2022-05-18'),
@@ -236,7 +226,7 @@ VALUES
     ('2022-05-21'),
     ('2022-05-22');
 
---emprunter--
+
 INSERT INTO `emprunter`(`ID_EMPRUNT`, `ID_OBJET`)
 VALUES 
     ('1','5'),
@@ -245,7 +235,7 @@ VALUES
     ('4','2'),
     ('4','7');
 
---rendre--
+
 INSERT INTO `rendre`(`ID_RETOUR`, `ID_OBJET`)
 VALUES
     ('1','56'),
@@ -254,13 +244,13 @@ VALUES
     ('4','68'),
     ('5','69');
 
---retourner--
+
 INSERT INTO `retourner`(`ID_RETOUR`, `ID_EMPRUNT`)
 VALUES
     ('1','1'),
     ('2','2');
 
---visioner--
+
 INSERT INTO `visioner`(`ID_CASSETTE`, `ID_FILM`)
 VALUES
     ('1','1'),

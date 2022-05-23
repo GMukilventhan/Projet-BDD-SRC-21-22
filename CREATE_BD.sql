@@ -141,7 +141,7 @@ CREATE TABLE `type_abonnement` (
 
 CREATE TABLE `utilisateur` (
 	`ID_UTILISATEUR` int(11) NOT NULL,
-	`NOM` varchar(3) NOT NULL,
+	`NOM` varchar(30) NOT NULL,
 	`PRENOM` varchar(30) NOT NULL,
 	`MAIL` text NOT NULL,
 	`ID_COMMUNE` int(11) NOT NULL,
