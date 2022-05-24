@@ -1,4 +1,3 @@
-
 INSERT INTO commune (VILLE) 
 VALUES 
     ('SAINT-DENIS'),
