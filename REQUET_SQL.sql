@@ -17,3 +17,4 @@ select count(ID_DISQUE) from DISQUE;
 
 select utilisateur.ID_UTILISATEUR,NOM,PRENOM,ID_EMPRUNT,DATE_EMPRUNT from emprunt inner join abonnement on emprunt.ID_ABONNEMENT = abonnement.ID_ABONNEMENT inner join utilisateur on abonnement.ID_UTILISATEUR = utilisateur.ID_UTILISATEUR;
 
+INSERT INTO utilisateur ( NOM, PRENOM, MAIL, ID_COMMUNE, ID_CATEGORIE_SOCIAL) VALUES ('JEAN','PHILIPS','jphililps@myges.fr','4','8');
